@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.mainAboutContainer {
+    display: grid;
+    max-width: 100vw;
+    max-height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'titleContainer'
+    'bodyContainer'
+    'navbar-common';
+}
+
+.titleContainer {
+    grid-area: 
+    'titleContainer';
+    padding-top: 100px;
+    text-align: center;
+  }
+
+.logo {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.clock {
+    color: black;
+    margin-top: 0;
+}
+
+.bodyContainer {
+    grid-area:
+    'bodyContainer';
+    text-align: center;
+}
+
+#aboutParagraph {
+    margin-left: 700px;
+    margin-right: 700px;
+}
+
+.navbar-common {
+   grid-area: 
+   'navbar-common';
+}
+
+#links-common {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.linkTitle-common {
+    font-size: 10px;
+    margin: 5px;
+}
